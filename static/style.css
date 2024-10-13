@@ -1,0 +1,51 @@
+.menu-bar{
+  background-color: rgb(205, 255, 205);
+}
+
+.bg-pill{
+    background-color: rgb(205, 255, 205);
+    color: rgb(20, 100, 20, 1);
+    font-weight: bold;
+    transition: 5s;
+}
+
+.bg-pill-2{
+  background-color: rgb(205, 255, 205);
+    color: rgb(20, 21, 100);
+    font-weight: bold;
+    transition: 5s;
+}
+
+.btn-pill{
+  background-color: rgb(205, 255, 205);
+  color: rgb(20, 100, 20, 1);
+  font-weight: bold;
+}
+
+.btn-pill:hover{
+  background-color:rgb(20, 100, 20, 1);
+  color: white;
+  font-weight: bold;
+}
+
+.menu-links{
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.error{
+    color:red;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+    html {
+      font-size: .8rem;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    html {
+      font-size: .6rem;
+    }
+  }
