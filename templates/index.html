@@ -1,22 +1,27 @@
 <html lang="en" style="background-color: rgb(247, 247, 247);">
 <head>
+    <style>
+        html{
+            visibility: hidden;
+            opacity: 0;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='bootstrap.css')}}">
-    <!-- <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='bootstrap-icons.min.css')}}"> -->
-    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">   
-    <script src="{{url_for('static',filename='bootstrap.bundle.min.js')}}"></script>
+    <link rel="preload" href="{{url_for('static',filename='bootstrap.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{url_for('static',filename='bootstrap.css')}}"></noscript>
+    <link rel="preload" href="{{url_for('static',filename='style.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{url_for('static',filename='style.css')}}"></noscript>
+    <script src="{{url_for('static',filename='render.js')}}" ></script>
+    <script src="{{url_for('static',filename='bootstrap.bundle.min.js')}}" ></script>
 </head>
 <body style="background-color: rgb(247, 247, 247);">
 
+<!-- inserting templates here -->
 
-    <!-- <footer>
-        <div class="row w-100 h-25 p-3 align-items-end">
-            <p class="text-center">Launched 04.2024</p>  
-        </div>
-    </footer>    -->
 </body>
 <script src="{{url_for('static',filename='custom.js')}}"></script>
+
 </html>
   

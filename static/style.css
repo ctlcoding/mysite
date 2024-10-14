@@ -3,22 +3,25 @@
 }
 
 .bg-pill{
-    background-color: rgb(205, 255, 205);
-    color: rgb(20, 100, 20, 1);
-    font-weight: bold;
-    transition: 5s;
+  background-color: rgb(205, 255, 205);
+  color: rgb(20, 100, 20, 1);
+  font-weight: bold;
+  border: 1px solid rgb(20, 100, 20, 1);
+  transition: 0s;
 }
 
 .bg-pill-2{
   background-color: rgb(205, 255, 205);
-    color: rgb(20, 21, 100);
-    font-weight: bold;
-    transition: 5s;
+  color: rgb(20, 21, 100);
+  border: 1px solid rgb(20, 21, 100);
+  font-weight: bold;
+  /* transition: 5s; */
 }
 
 .btn-pill{
   background-color: rgb(205, 255, 205);
   color: rgb(20, 100, 20, 1);
+  border: 1px solid rgb(20, 100, 20, 1);
   font-weight: bold;
 }
 
@@ -48,4 +51,9 @@
     html {
       font-size: .6rem;
     }
+  }
+
+  html{
+    visibility: visible;
+    opacity: 1;  
   }
