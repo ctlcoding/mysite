@@ -1,13 +1,18 @@
+import os
 from flask import Flask, render_template, request
 from flask_bootstrap import Bootstrap, bootstrap_find_resource
 import pickle
 # from sklearn.linear_model import LinearRegression
 
+print("Current working directory:", os.getcwd())
+
+model_path = os.getcwd() + '\model.pkl'
+
 app = Flask(__name__)
 Bootstrap(app)
 
 print("loading data model")
-with open('model.pkl', 'rb') as f:
+with open(model_path, 'rb') as f:
     lr = pickle.load(f)
 
 @app.route("/")
