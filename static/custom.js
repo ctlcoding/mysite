@@ -6,20 +6,51 @@ window.onload = (e) => {
     }
 }
 
+// const my_images = [
+//     "{{ url_for('static',filename='red_img.jpg') }}",
+//     "{{ url_for('static',filename='green_img.jpg') }}",
+//     "{{ url_for('static',filename='blue_img.jpg') }}",
+//     "{{ url_for('static',filename='merged_img.jpg') }}"
+// ];
 
-const pills = document.querySelectorAll('p');
+const my_images = [
+    "/static/red_img.jpg",
+    "/static/green_img.jpg",
+    "/static/blue_img.jpg",
+    "/static/merged_img.jpg",
+];
 
-setInterval(colorPills,5000);
-
-function colorPills(){
-    pills.forEach((element) => {
-        if(element.classList.contains("rounded-pill")){
-            console.log(element)
-            element.classList.toggle("bg-pill-2")
-        }
-    });
-    console.log("next round");
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+img_element = document.querySelector(".profile")
+
+function imageSwitch(){
+
+    console.log(img_element.src);
+    new_image = my_images[getRandomNumber(0,my_images.length - 1)]
+    img_element.setAttribute('src',new_image);
+    console.log("change image");
+    console.log(new_image);
+}
+
+setInterval(imageSwitch,3000);
+
+// const pills = document.querySelectorAll('p');
+
+// setInterval(colorPills,5000);
+
+// function colorPills(){
+//     pills.forEach((element) => {
+//         if(element.classList.contains("rounded-pill")){
+//             console.log(element)
+//             element.classList.toggle("bg-pill-2")
+//             element.classList.toggle("bg-pill-1")
+//         }
+//     });
+//     console.log("next round");
+// }
 
 // check if input is an integer less than 100
 
