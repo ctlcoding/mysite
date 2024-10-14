@@ -6,11 +6,13 @@ import pickle
 
 print("Current working directory:", os.getcwd())
 
-model_path = os.getcwd() + '\model.pkl'
+model_path = os.getcwd() + '/mysite/model.pkl'
+# model_path = os.getcwd() + '\model.pkl'
 
 app = Flask(__name__)
 Bootstrap(app)
 
+print(model_path)
 print("loading data model")
 with open(model_path, 'rb') as f:
     lr = pickle.load(f)
