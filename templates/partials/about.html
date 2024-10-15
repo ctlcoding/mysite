@@ -2,12 +2,13 @@
 <div class="container pt-5 h-100">
     <div class="row h-auto justify-content-evenly">
         <!-- About Me -->
+         
         <div class="col-md-4 mt-5">
             <div class="card rounded-5 text-center w-100 h-auto border border-gray">
-                <img src="{{url_for('static',filename='green_img.jpg')}}" class="card-img-top rounded-top-5 profile" alt="...">
+                <img src="{{url_for('static',filename='green_img.jpg')}}" class="card-img-top rounded-top-5 profile p-5 bg-dark" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">"Me in RGB"</h5>
-                    <p class="card-text" style="font-family: 'Courier New', Courier, monospace;">Hello, and welcome to my analytics portfolio. <br>  Quick notes about me:</p>
+                    <h5 class="card-title fs-1">"Me in RGB"</h5>
+                    <p class="card-text fs-3" style="font-family: 'Courier New', Courier, monospace;">Welcome to my analytics portfolio. <br>  Quick notes about me:</p>
                     <p class="text-center bg-pill-0 p-3 rounded-pill">Graduated from LSU (EE degree)</p>
                     <p class="text-center bg-pill-0 p-3 rounded-pill">Air Force Veteran</p>
                     <p class="text-center bg-pill-0 p-3 rounded-pill">Provides value through analytics and data ETL</p>
@@ -22,38 +23,52 @@
         </div>
         <!-- Skills -->
         <div class="col-md-7 mt-5">
-            <div class="row rounded-5 h-100 d-flex justify-content-evenly bg-white border border-gray">
-                <h1 class="text-center pt-5">Areas of Expertise</h1>
-                <div class="col-md-5">
-                    <p class="text-center bg-pill-0 p-3 rounded-pill">Python</p>
+            <div class="row rounded-5 h-100 p-5 d-flex justify-content-evenly bg-white border border-gray">
+                <h1 class="text-center pt-1 fs-1">Skills</h1>
+                <div class="row justify-content-evenly border bg-light rounded">
+                    <p class="text-center fs-1 p-1" >Programming Languages &#128221;</p>
+                    <div class="col-md-5">
+                        <p class="text-center bg-pill-0 p-3 rounded-pill">Python</p>
+                    </div>
+                    <div class="col-md-5">
+                        <p class="text-center bg-pill-0 p-3 rounded-pill">Javascript</p>
+                    </div>
+                    <div class="col-md-5">
+                        <p class="text-center bg-pill-0 p-3 rounded-pill">HTML</p>
+                    </div>
+                    <div class="col-md-5">
+                        <p class="text-center bg-pill-0 p-3 rounded-pill">CSS/Bootstrap</p>
+                    </div>
+                    <div class="col-md-5">
+                        <p class="text-center bg-pill-0 p-3 rounded-pill">SQL</p>
+                    </div>
+                    <div class="col-md-5">
+                        <p class="text-center bg-pill-0 p-3 rounded-pill">NoSQL</p>
+                    </div>
+                </div class="text-center">
+                <div class="row justify-content-evenly border bg-light mt-2 rounded">
+                    <p class="text-center fs-1 p-1" >Data Visualization &#128202;</p>
+                    <div class="col-md-5">
+                        <p class="text-center bg-pill-0 p-3 rounded-pill">Power BI/DAX</p>
+                    </div>
+                    <div class="col-md-5">
+                        <p class="text-center bg-pill-0 p-3 rounded-pill">Tableau</p>
+                    </div>
+                    <div class="col-md-5">
+                        <p class="text-center bg-pill-0 p-3 rounded-pill">Excel/Power Query</p>
+                    </div>
                 </div>
-                <div class="col-md-5">
-                    <p class="text-center bg-pill-0 p-3 rounded-pill">Javascript</p>
+
+                <div class="row justify-content-evenly border bg-light mt-2 rounded">
+                    <p class="text-center fs-1 p-1">Artificial Intelligence &#129302;</p>
+                    <div class="col-md-5">
+                        <p class="text-center bg-pill-0 p-3 rounded-pill">Machine Learning</p>
+                    </div>
+                    <div class="col-md-5">
+                        <p class="text-center bg-pill-0 p-3 rounded-pill">Neural Networks</p>
+                    </div>
                 </div>
-                <div class="col-md-5">
-                    <p class="text-center bg-pill-0 p-3 rounded-pill">HTML</p>
-                </div>
-                <div class="col-md-5">
-                    <p class="text-center bg-pill-0 p-3 rounded-pill">CSS/Bootstrap</p>
-                </div>
-                <div class="col-md-5">
-                    <p class="text-center bg-pill-0 p-3 rounded-pill">SQL/NoSQL</p>
-                </div>
-                <div class="col-md-5">
-                    <p class="text-center bg-pill-0 p-3 rounded-pill">Power BI/DAX</p>
-                </div>
-                <div class="col-md-5">
-                    <p class="text-center bg-pill-0 p-3 rounded-pill">Tableau</p>
-                </div>
-                <div class="col-md-5">
-                    <p class="text-center bg-pill-0 p-3 rounded-pill">Excel/Power Query</p>
-                </div>
-                <div class="col-md-5">
-                    <p class="text-center bg-pill-0 p-3 rounded-pill">Machine Learning</p>
-                </div>
-                <div class="col-md-5">
-                    <p class="text-center bg-pill-0 p-3 rounded-pill">Neural Networks</p>
-                </div>
+
             </div>    
         </div>
     </div>

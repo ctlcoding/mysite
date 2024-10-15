@@ -16,8 +16,7 @@ window.onload = (e) => {
 const my_images = [
     "/static/red_img.jpg",
     "/static/green_img.jpg",
-    "/static/blue_img.jpg",
-    "/static/merged_img.jpg",
+    "/static/blue_img.jpg"
 ];
 
 function getRandomNumber(min, max) {
