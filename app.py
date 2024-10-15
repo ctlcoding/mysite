@@ -9,10 +9,10 @@ print("Current working directory:", os.getcwd())
 model_path = ""
 
 # set path depending on environment
-if(os.getcwd().find("C:\\") > 0):
-    model_path = os.getcwd() + '/mysite/model.pkl'
-else:
+if(os.getcwd().find("Users") > 0):
     model_path = os.getcwd() + '\model.pkl'
+else:
+    model_path = os.getcwd() + '/mysite/model.pkl'
 
 app = Flask(__name__)
 Bootstrap(app)
