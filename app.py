@@ -44,7 +44,7 @@ def prediction():
 @app.route("/viz")
 def viz():
 
-    return render_template('landing_about.html',salary="Predicted Salary is:$")
+    return render_template('landing_viz.html',salary="Predicted Salary is:$")
 
 if __name__ == "__main__":
     app.run(debug=True)

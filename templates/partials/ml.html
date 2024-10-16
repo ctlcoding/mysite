@@ -6,7 +6,7 @@
         <!-- Projects -->
         <h1 class="text-center" style="text-decoration: underline;">Machine Learning - Salary Recommendation vs Experience</h1>
             <div class="text-center" style="width: 80%;">
-                <p class="my-3">I trained a small linear regression model to predict salary based on years of experience.  The model takes one input in the form of an integer and returns a value for salary with a fixed decimal.  
+                <p class="my-3">I trained a simple linear regression model to predict salary based on years of experience.  The model takes one input in the form of an integer and returns a value for salary with a fixed decimal.  
                 The server for this app was written in Python, and the model was created with scikit-learn.  Feel free to try it out below!
                 </p>
                 <img src="{{url_for('static',filename='metrics.png')}}" class="w-25 img-fluid img-thumbnail rounded-1 p-1 bg-dark" alt="...">
@@ -25,7 +25,7 @@
             <br>
             </div>
         <form class="row justify-content-around" action="/salary" method="post">
-            <div class="col-md-5 h-100 border rounded-5 border-warning p-3">
+            <div class="col-md-5 h-100 border rounded-5 border-info p-3">
                 <p class="fs-2">Enter years of experience below:</p>
                 <input id="salary_pred" name="salary" class="form-control w-100 fs-2" placeholder="1 to 30" type="text">
                 <p class="error" style="display: none;"></p>
