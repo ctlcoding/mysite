@@ -3,33 +3,53 @@
     <div class="row h-auto justify-content-evenly">
         <!-- About Me -->
          
-        <div class="col-md-4 mt-5">
+        <!-- <div class="col-md-4 mt-5">
             <div class="card rounded-5 text-center h-100 w-100 h-auto border border-light m-0 shadow">
                 <div class="bg-dark p-5 rounded-top-5">
                     <img src="{{url_for('static',filename='green_img.jpg')}}" class="card-img-top profile p-5 rounded-top-5 bg-dark col-xs-4" alt="...">
                     <h5 class="card-title fs-1"><span style="color: white;">"Me in </span><span style="color: red;">R</span><span style="color: green;">G</span><span style="color: blue;">B</span><span style="color: white;">"</span></h5>
                 </div>
                 <div class="card-body p-5">
-                    <!-- <h5 class="card-title fs-1">"Me in <span style="color: red;">R</span><span style="color: green;">G</span><span style="color: blue;">B</span>"</h5> -->
-                    <p class="card-text fs-3 py-3" style="font-family: cursive;">Welcome to my analytics portfolio. Quick notes about me:</p>
+                    <h5 class="card-title fs-1">"Me in <span style="color: red;">R</span><span style="color: green;">G</span><span style="color: blue;">B</span>"</h5> -->
+                    <!-- <p class="card-text fs-3 py-3" style="font-family: cursive;">Welcome to my analytics portfolio. Quick notes about me:</p>
                     <p class="text-center bg-pill-0 p-3 rounded-pill">Graduated from LSU (EE degree)</p>
                     <p class="text-center bg-pill-0 p-3 rounded-pill">Air Force Veteran</p>
-                    <p class="text-center bg-pill-0 p-3 rounded-pill">Provides value through analytics and data ETL</p>
+                    <p class="text-center bg-pill-0 p-3 rounded-pill">Provides value through analytics and data ETL</p> -->
                     <!-- <ul class="list-group list-group-flush m-3">
                         <li class="list-group-item bg-pill border border-white">Graduated from LSU (EE degree)</li>
                         <li class="list-group-item bg-pill border border-white">Air Force Veteran</li>
                         <li class="list-group-item bg-pill border border-white">Data Solutions</li>
                     </ul> -->
                     <!-- <p>I'll continue to update this portfolio as I broaden my skillset.</p> -->
-                </div>
-            </div>
-        </div>
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
         <!-- Skills -->
-        <div class="col-md-7 mt-5">
-            <div class="row rounded-5 h-100 p-5 d-flex justify-content-evenly bg-white border border-dark">
-                <h1 class="text-center pt-1 fs-1">Skills</h1>
-                <div class="row justify-content-evenly border bg-light rounded">
-                    <p class="text-center fs-1 p-1" >Coding Languages &#128221;</p>
+        <div class="mt-5">
+            <div class="row h-100 p-5 d-flex justify-content-evenly bg-white border border-dark">
+                <!-- about me section -->
+                <div class="my-5">
+                    <div class="text-center h-auto w-100 m-0 row">
+                        <!-- <div class="col-md-5 bg-dark p-1">
+                            <img src="{{url_for('static',filename='green_img.jpg')}}" class="card-img-top profile p-5 bg-dark" alt="...">
+                        </div> -->
+                        <div class="col-md-5 card-body row justify-content-evenly align-items-center m-0 p-0">
+                            <div class="col-md-5 h-auto">
+                                <img src="{{url_for('static',filename='green_img.jpg')}}" class="card-img-top profile p-2 bg-dark col-md-5" alt="...">
+                            </div>
+                            <div class="col-md-5 h-auto">
+                                <p class="card-text fs-3 py-3" style="font-family: cursive;">Welcome to my analytics portfolio. Quick notes about me:</p>
+                                <p class="text-center header-pill p-3">Graduated from LSU (Electrical Engineering)</p>
+                                <p class="text-center header-pill p-3">Air Force Veteran</p>
+                                <p class="text-center header-pill p-3">Provides value through analytics and data ETL</p>
+                            </div>
+                            <!-- <h5 class="card-title fs-1">"Me in <span style="color: red;">R</span><span style="color: green;">G</span><span style="color: blue;">B</span>"</h5> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- <h1 class="text-center pt-1 fs-1">Skills</h1> -->
+                <div class="row justify-content-evenly border bg-light rounded my-2">
+                    <p class="text-center fs-1 p-1" >Coding Languages</p>
                     <div class="col-md-5">
                         <p class="text-center bg-pill-0 p-3 rounded-pill">Python</p>
                     </div>
@@ -42,15 +62,18 @@
                     <div class="col-md-5">
                         <p class="text-center bg-pill-0 p-3 rounded-pill">CSS/Bootstrap</p>
                     </div>
+                </div class="text-center">
+                <div class="row justify-content-evenly border bg-light rounded">
+                    <p class="text-center fs-1 p-1" >Databases</p>
                     <div class="col-md-5">
-                        <p class="text-center bg-pill-0 p-3 rounded-pill">SQL</p>
+                        <p class="text-center bg-pill-0 p-3 rounded-pill">Oracle/Dremio/Snowflake</p>
                     </div>
                     <div class="col-md-5">
-                        <p class="text-center bg-pill-0 p-3 rounded-pill">NoSQL</p>
+                        <p class="text-center bg-pill-0 p-3 rounded-pill">MongoDB/Firebase</p>
                     </div>
                 </div class="text-center">
                 <div class="row justify-content-evenly border bg-light mt-2 rounded">
-                    <p class="text-center fs-1 p-1" >Data Visualization &#128202;</p>
+                    <p class="text-center fs-1 p-1" >Data Visualization</p>
                     <div class="col-md-5">
                         <p class="text-center bg-pill-0 p-3 rounded-pill"><a href="/viz">Power BI</a></p>
                     </div>
@@ -66,17 +89,18 @@
                 </div>
 
                 <div class="row justify-content-evenly border bg-light mt-2 rounded">
-                    <p class="text-center fs-1 p-1">Artificial Intelligence &#129302;</p>
+                    <p class="text-center fs-1 p-1">Artificial Intelligence</p>
                     <div class="col-md-5">
-                        <p class="text-center bg-pill-0 p-3 rounded-pill"><a href="/ml">Machine Learning</a></p>
+                        <!-- <p class="text-center bg-pill-0 p-3 rounded-pill"><a href="/ml">Machine Learning</a></p> -->
+                        <p class="text-center bg-pill-0 p-3 rounded-pill">Machine Learning</p>
                     </div>
                     <div class="col-md-5">
-                        <p class="text-center bg-pill-0 p-3 rounded-pill">Neural Networks</p>
+                        <p class="text-center bg-pill-0 p-3 rounded-pill">Artificial Neural Networks</p>
                     </div>
                 </div>
 
                 <div class="row justify-content-evenly border bg-light mt-2 rounded">
-                    <p class="text-center fs-1 p-1">Automation &#128423;</p>
+                    <p class="text-center fs-1 p-1">Automation</p>
                     <div class="col-md-5">
                         <p class="text-center bg-pill-0 p-3 rounded-pill">Power Apps</p>
                     </div>

@@ -15,8 +15,7 @@ window.onload = (e) => {
 
 const my_images = [
     "/static/red_img.jpg",
-    "/static/green_img.jpg",
-    "/static/blue_img.jpg"
+    "/static/green_img.jpg"
 ];
 
 function getRandomNumber(min, max) {
@@ -30,8 +29,6 @@ function imageSwitch(){
     console.log(img_element.src);
     new_image = my_images[getRandomNumber(0,my_images.length - 1)]
     img_element.setAttribute('src',new_image);
-    console.log("change image");
-    console.log(new_image);
 }
 
 setInterval(imageSwitch,3000);

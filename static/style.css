@@ -33,6 +33,13 @@
   font-weight: bold;
 }
 
+.header-pill{
+  background-color: rgb(74, 75, 74);
+  color: rgb(209, 209, 209);
+  border: 1px solid rgb(0, 0, 0);
+  font-weight: bold;
+}
+
 .btn-pill:hover{
   background-color:rgb(20, 100, 20, 1);
   color: white;
