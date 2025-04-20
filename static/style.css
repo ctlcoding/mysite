@@ -65,6 +65,10 @@
   @media screen and (max-width: 600px) {
     html {
       font-size: .6rem;
+    };
+    .pro_pic {
+      width: .1;
+      height: .1;
     }
   }
 

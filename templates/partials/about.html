@@ -26,7 +26,7 @@
         <!-- </div> -->
         <!-- Skills -->
         <div class="mt-5">
-            <div class="row h-100 p-5 d-flex justify-content-evenly bg-white border border-dark">
+            <div class="row h-100 p-5 d-flex justify-content-evenly bg-white border shadow rounded">
                 <!-- about me section -->
                 <div class="my-5">
                     <div class="text-center h-auto w-100 m-0 row">
@@ -34,14 +34,14 @@
                             <img src="{{url_for('static',filename='green_img.jpg')}}" class="card-img-top profile p-5 bg-dark" alt="...">
                         </div> -->
                         <div class="col-md-5 card-body row justify-content-evenly align-items-center m-0 p-0">
-                            <div class="col-md-5 h-auto">
-                                <img src="{{url_for('static',filename='green_img.jpg')}}" class="card-img-top profile p-2 bg-dark col-md-5" alt="...">
+                            <div class="col-md-5 h-auto row">
+                                <img src="{{url_for('static',filename='green_img.jpg')}}" class="p-1 bg-dark" alt="...">
+                                <p class="card-text fs-3 py-3" style="font-family: cursive;">Welcome to my analytics portfolio</p>
                             </div>
                             <div class="col-md-5 h-auto">
-                                <p class="card-text fs-3 py-3" style="font-family: cursive;">Welcome to my analytics portfolio. Quick notes about me:</p>
-                                <p class="text-center header-pill p-3">B.S. in Electrical Engineering</p>
-                                <p class="text-center header-pill p-3">Military Veteran</p>
-                                <p class="text-center header-pill p-3">I provide simple answers from complex data</p>
+                                <p class="text-center header-pill p-3 rounded">B.S. in Electrical Engineering</p>
+                                <p class="text-center header-pill p-3 rounded">Military Veteran</p>
+                                <p class="text-center header-pill p-3 rounded">Complex data -> Simple solutions</p>
                             </div>
                             <!-- <h5 class="card-title fs-1">"Me in <span style="color: red;">R</span><span style="color: green;">G</span><span style="color: blue;">B</span>"</h5> -->
                         </div>
@@ -49,72 +49,93 @@
                 </div>
                 <!-- <h1 class="text-center pt-1 fs-1">Skills</h1> -->
                 <div class="row justify-content-evenly border bg-light rounded my-2">
-                    <p class="text-center text-secondary fs-1 p-1" >Coding</p>
+                    <p class="text-center text-secondary fs-3 p-1" >Coding</p>
                     <div class="col-md-5">
-                        <p class="text-center bg-pill-0 p-3 rounded-pill">Python</p>
+                        <p class="text-center bg-pill-0 p-1 rounded-pill">Python</p>
                     </div>
                     <div class="col-md-5">
-                        <p class="text-center bg-pill-0 p-3 rounded-pill">Javascript</p>
+                        <p class="text-center bg-pill-0 p-1 rounded-pill">Javascript</p>
                     </div>
                     <div class="col-md-5">
-                        <p class="text-center bg-pill-0 p-3 rounded-pill">HTML</p>
+                        <p class="text-center bg-pill-0 p-1 rounded-pill">HTML</p>
                     </div>
                     <div class="col-md-5">
-                        <p class="text-center bg-pill-0 p-3 rounded-pill">CSS / Bootstrap</p>
+                        <p class="text-center bg-pill-0 p-1 rounded-pill">CSS / Bootstrap</p>
                     </div>
                 </div class="text-center">
                 <div class="row justify-content-evenly border bg-light rounded">
-                    <p class="text-center fs-1 p-1 text-secondary" >Databases / Data Lakes</p>
+                    <p class="text-center fs-3 p-1 text-secondary" >Databases / Data Lakes</p>
                     <div class="col-md-5">
-                        <p class="text-center bg-pill-0 p-3 rounded-pill">Dremio / Snowflake / Scality</p>
+                        <p class="text-center bg-pill-0 p-1 rounded-pill">Dremio</p>
                     </div>
                     <div class="col-md-5">
-                        <p class="text-center bg-pill-0 p-3 rounded-pill">MSSQL / Oracle</p>
+                        <p class="text-center bg-pill-0 p-1 rounded-pill">Snowflake</p>
                     </div>
                     <div class="col-md-5">
-                        <p class="text-center bg-pill-0 p-3 rounded-pill">MongoDB / Firebase</p>
+                        <p class="text-center bg-pill-0 p-1 rounded-pill">Scality</p>
+                    </div>
+                    <div class="col-md-5">
+                        <p class="text-center bg-pill-0 p-1 rounded-pill">MS SQL Server</p>
+                    </div>
+                    <div class="col-md-5">
+                        <p class="text-center bg-pill-0 p-1 rounded-pill">Oracle</p>
+                    </div>
+                    <div class="col-md-5">
+                        <p class="text-center bg-pill-0 p-1 rounded-pill">MongoDB</p>
+                    </div>
+                    <div class="col-md-5">
+                        <p class="text-center bg-pill-0 p-1 rounded-pill">Firebase</p>
                     </div>
                 </div class="text-center">
                 <div class="row justify-content-evenly border bg-light mt-2 rounded">
-                    <p class="text-center fs-1 p-1 text-secondary" >Data Visualization / Reporting</p>
+                    <p class="text-center fs-3 p-1 text-secondary" >Data Visualization / Reporting</p>
                     <div class="col-md-5">
-                        <p class="text-center bg-pill-0 p-3 rounded-pill"><a href="/viz">Power BI</a></p>
+                        <p class="text-center bg-pill-0 p-1 rounded-pill">Power BI</p>
                     </div>
                     <div class="col-md-5">
-                        <p class="text-center bg-pill-0 p-3 rounded-pill">Tableau</p>
+                        <p class="text-center bg-pill-0 p-1 rounded-pill">Tableau</p>
                     </div>
                     <div class="col-md-5">
-                        <p class="text-center bg-pill-0 p-3 rounded-pill">Excel</p>
+                        <p class="text-center bg-pill-0 p-1 rounded-pill">Excel</p>
+                    </div>
+                    <div class="col-md-5">
+                        <p class="text-center bg-pill-0 p-1 rounded-pill">Seaborn</p>
                     </div>
                 </div>
 
                 <div class="row justify-content-evenly border bg-light mt-2 rounded">
-                    <p class="text-center fs-1 p-1 text-secondary">A.I.</p>
+                    <p class="text-center fs-3 p-1 text-secondary">A.I.</p>
                     <div class="col-md-5">
                         <!-- <p class="text-center bg-pill-0 p-3 rounded-pill"><a href="/ml">Machine Learning</a></p> -->
-                        <p class="text-center bg-pill-0 p-3 rounded-pill">Machine Learning</p>
+                        <p class="text-center bg-pill-0 p-1 rounded-pill">Machine Learning</p>
                     </div>
                     <div class="col-md-5">
-                        <p class="text-center bg-pill-0 p-3 rounded-pill">Artificial Neural Networks</p>
+                        <p class="text-center bg-pill-0 p-1 rounded-pill">Artificial Neural Networks</p>
                     </div>
                 </div>
 
                 <div class="row justify-content-evenly border bg-light mt-2 rounded">
-                    <p class="text-center fs-1 p-1 text-secondary">Automation</p>
+                    <p class="text-center fs-3 p-1 text-secondary">Automation</p>
                     <div class="col-md-5">
-                        <p class="text-center bg-pill-0 p-3 rounded-pill">Power Apps</p>
+                        <p class="text-center bg-pill-0 p-1 rounded-pill">Power Apps</p>
                     </div>
                     <div class="col-md-5">
-                        <p class="text-center bg-pill-0 p-3 rounded-pill">Power Automate</p>
+                        <p class="text-center bg-pill-0 p-1 rounded-pill">Power Automate</p>
                     </div>
                     <div class="col-md-5">
-                        <p class="text-center bg-pill-0 p-3 rounded-pill">Alteryx</p>
+                        <p class="text-center bg-pill-0 p-1 rounded-pill">Alteryx</p>
                     </div>
                     <div class="col-md-5">
-                        <p class="text-center bg-pill-0 p-3 rounded-pill">Domino Data Lab</p>
+                        <p class="text-center bg-pill-0 p-1 rounded-pill">Domino Data Lab</p>
                     </div>
                 </div>
             </div>    
         </div>
+    </div>
+    <div class="container pt-5">
+        <img src="{{url_for('static',filename='powerbi.png')}}" class="w-100 img-fluid img-thumbnail rounded-1 p-1 bg-dark shadow" alt="...">
+    </div>
+    <div class="container pt-5">
+        <img src="{{url_for('static',filename='powerbi2.png')}}" class="w-100 img-fluid img-thumbnail rounded-1 p-1 bg-dark shadow" alt="...">
     </div>
 </div>
