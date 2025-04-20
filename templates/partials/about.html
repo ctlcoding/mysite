@@ -26,7 +26,7 @@
         <!-- </div> -->
         <!-- Skills -->
         <div class="mt-5">
-            <div class="row h-100 p-5 d-flex justify-content-evenly bg-white border shadow rounded">
+            <div class="row h-auto p-5 d-flex justify-content-evenly bg-white border shadow rounded">
                 <!-- about me section -->
                 <div class="my-5">
                     <div class="text-center h-auto w-100 m-0 row">
@@ -34,11 +34,11 @@
                             <img src="{{url_for('static',filename='green_img.jpg')}}" class="card-img-top profile p-5 bg-dark" alt="...">
                         </div> -->
                         <div class="col-md-5 card-body row justify-content-evenly align-items-center m-0 p-0">
-                            <div class="col-md-5 h-auto row">
-                                <img src="{{url_for('static',filename='green_img.jpg')}}" class="p-1 bg-dark" alt="...">
-                                <p class="card-text fs-3 py-3" style="font-family: cursive;">Welcome to my analytics portfolio</p>
+                            <div class="col-8 col-sm-8 col-md-5 h-auto">
+                                <img src="{{url_for('static',filename='green_img.jpg')}}" class="p-1 bg-dark img-fluid h-sm-25" alt="...">
                             </div>
-                            <div class="col-md-5 h-auto">
+                            <div class="col-8 col-sm-8 col-md-5 h-auto">
+                                <p class="card-text fs-3 py-3" style="font-family: cursive;">Welcome to my analytics portfolio</p>
                                 <p class="text-center header-pill p-3 rounded">B.S. in Electrical Engineering</p>
                                 <p class="text-center header-pill p-3 rounded">Military Veteran</p>
                                 <p class="text-center header-pill p-3 rounded">Complex data -> Simple solutions</p>
@@ -132,10 +132,13 @@
             </div>    
         </div>
     </div>
-    <div class="container pt-5">
-        <img src="{{url_for('static',filename='powerbi.png')}}" class="w-100 img-fluid img-thumbnail rounded-1 p-1 bg-dark shadow" alt="...">
-    </div>
-    <div class="container pt-5">
-        <img src="{{url_for('static',filename='powerbi2.png')}}" class="w-100 img-fluid img-thumbnail rounded-1 p-1 bg-dark shadow" alt="...">
+    <div class="row h-auto my-5 p-5 d-flex justify-content-evenly bg-white border shadow rounded">
+        <p class="text-center text-secondary fs-3 p-1" >Data Viz</p>
+        <div class="container pt-5">
+            <img src="{{url_for('static',filename='powerbi.png')}}" class="w-100 img-fluid img-thumbnail rounded-1 p-1 bg-dark shadow" alt="...">
+        </div>
+        <div class="container pt-5">
+            <img src="{{url_for('static',filename='powerbi2.png')}}" class="w-100 img-fluid img-thumbnail rounded-1 p-1 bg-dark shadow" alt="...">
+        </div>
     </div>
 </div>
