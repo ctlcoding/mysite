@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for, session
 from flask_bootstrap import Bootstrap, bootstrap_find_resource
 import pickle
 # from sklearn.linear_model import LinearRegression
@@ -17,6 +17,8 @@ else:
 app = Flask(__name__)
 Bootstrap(app)
 
+app.secret_key = 'sessionkeys123'
+
 print(model_path)
 print("loading data model")
 with open(model_path, 'rb') as f:
@@ -25,7 +27,13 @@ with open(model_path, 'rb') as f:
 @app.route("/")
 def index():
 
-    return render_template('landing_about.html')
+    if session.get("salary"):
+
+        return render_template('landing_about.html',salary=session["salary"])
+    
+    else: 
+
+        return render_template('landing_about.html')
 
 @app.route("/ml")
 def ml():
@@ -38,8 +46,9 @@ def prediction():
     salary = float(request.form['salary'])
     predicted_salary = "Predicted Salary is: $" + "{0:,.2f}".format(lr.predict([[salary]])[0])
 
-
-    return render_template('landing_ml.html',salary=predicted_salary)
+    session["salary"] = predicted_salary
+    return redirect(url_for('index'))
+    # return render_template('landing_about.html',salary=predicted_salary)
 
 @app.route("/viz")
 def viz():

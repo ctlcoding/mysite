@@ -35,11 +35,11 @@
                         </div> -->
                         <div class="col-md-5 card-body row justify-content-evenly align-items-center m-0 p-0">
                             <div class="col-8 col-sm-8 col-md-5 h-auto">
-                                <img src="{{url_for('static',filename='green_img.jpg')}}" class="p-1 bg-dark img-fluid h-sm-25" alt="...">
+                                <img src="{{url_for('static',filename='green_img.jpg')}}" class="p-1 bg-dark img-fluid rounded" alt="...">
                             </div>
                             <div class="col-8 col-sm-8 col-md-5 h-auto">
-                                <p class="card-text fs-3 py-3" style="font-family: cursive;">Welcome to my analytics portfolio</p>
-                                <p class="text-center header-pill p-3 rounded">B.S. in Electrical Engineering</p>
+                                <p class="card-text fs-4 py-3" style="font-family: cursive;">Welcome to my analytics portfolio.  Check out my skills below, but in the meantime, here are a few notes about me:</p>
+                                <p class="text-center header-pill p-3 rounded">Avid fisherman</p>
                                 <p class="text-center header-pill p-3 rounded">Military Veteran</p>
                                 <p class="text-center header-pill p-3 rounded">Complex data -> Simple solutions</p>
                             </div>
@@ -133,12 +133,41 @@
         </div>
     </div>
     <div class="row h-auto my-5 p-5 d-flex justify-content-evenly bg-white border shadow rounded">
-        <p class="text-center text-secondary fs-3 p-1" >Data Viz</p>
-        <div class="container pt-5">
-            <img src="{{url_for('static',filename='powerbi.png')}}" class="w-100 img-fluid img-thumbnail rounded-1 p-1 bg-dark shadow" alt="...">
-        </div>
-        <div class="container pt-5">
-            <img src="{{url_for('static',filename='powerbi2.png')}}" class="w-100 img-fluid img-thumbnail rounded-1 p-1 bg-dark shadow" alt="...">
+        <div class="row justify-content-evenly border bg-light rounded my-2 p-2">
+            <p class="text-center text-secondary fs-3 p-1" >Data Viz</p>
+            <div class="container pt-1">
+                <img src="{{url_for('static',filename='powerbi.png')}}" class="w-100 img-fluid img-thumbnail rounded-1 p-1 bg-dark shadow" alt="...">
+            </div>
+            <div class="container pt-5">
+                <img src="{{url_for('static',filename='powerbi2.png')}}" class="w-100 img-fluid img-thumbnail rounded-1 p-1 bg-dark shadow" alt="...">
+            </div>
         </div>
     </div>
-</div>
+    <div class="row h-auto my-5 p-5 d-flex justify-content-evenly bg-white border shadow rounded">
+        <div class="row justify-content-evenly border bg-light rounded my-2 p-3">
+            <p class="text-center text-secondary fs-3 p-1" >Machine Learning - Salary Prediction</p>
+            <div class="container pt-1">
+                <div class="h-auto p-5 m-auto bg-white rounded-5 border border-dark">
+                        <!-- <div class="container text-center w-50 h-25" style="position:absolute;background-color: rgb(255, 255, 0, 1);z-index: 9999;display: none;">
+                            <h1>Coming Soon</h1>
+                        </div> -->
+                    <!-- Projects -->
+                    <!-- <h1 class="text-center">Machine Learning - Salary Recommendation vs Experience</h1> -->
+                        <div style="width: 10%;">
+                        <br>
+                        </div>
+                    <form class="row justify-content-around" action="/salary" method="post">
+                        <div class="col-md-5 h-100 border rounded border-dark bg-dark text-white p-3">
+                            <p class="fs-4">Enter years of experience below:</p>
+                            <input id="salary_pred" name="salary" class="form-control w-100 fs-4" placeholder="1 to 30" type="text">
+                            <p class="error" style="display: none;"></p>
+                            <button class="btn btn-pill mt-3 d-block mx-auto" type="submit">Submit</button>
+                        </div>
+                        <div class="col-md-5 bg-light rounded-5 border border-gray">
+                            <p class="text-center h-100 rounded-5 d-flex align-items-center justify-content-center" style="font-size: 1.5rem;color: rgb(20, 100, 20, 1); font-weight: bold;">{{ salary }}</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
